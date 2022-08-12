@@ -1,0 +1,27 @@
+.lang{
+  list-style: none;
+
+  &__item{
+
+  }
+  &__link{
+
+  }
+  &__icon{
+
+  }
+  &--header{
+    margin-right:  56px;
+    @media(max-width: 1200px){
+      margin-right: 25px;
+    }
+    @media(max-width: 1050px){
+      margin-right: 0;
+      margin-top: auto;
+      margin-bottom: 40px;
+    }
+  }
+  &--fatal{
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+.products{
+  padding-top: 155px;
+  padding-bottom: 77px;
+  @media(max-width: 992px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__btn{
+    padding: 19px 18px 18px;
+    background: transparent;
+    border: 2px solid #FF3E01;
+    border-radius: 5px;
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FF3E01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    max-width: 338px;
+    margin: 0 auto;
+  }
+}

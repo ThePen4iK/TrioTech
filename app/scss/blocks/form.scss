@@ -1,0 +1,149 @@
+.form{
+  &__list{
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+  }
+  &__label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+  }
+  &__input{
+    outline: none;
+    width: 100%;
+    max-width: 505px;
+    border: 2px solid rgba(73, 84, 96, 0.3);
+    border-radius: 5px;
+    padding: 18px 18px 19px;
+
+
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+
+    &::placeholder{
+      font-family: "e-Ukraine Head", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    &--contact{
+      max-width: 523px;
+    }
+  }
+
+  &__textarea{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    max-width: 505px;
+    border: 2px solid rgba(73, 84, 96, 0.3);
+    border-radius: 5px;
+    padding: 18px 18px 19px;
+    resize: none;
+
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+    &::placeholder{
+      font-family: "e-Ukraine Head", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    &--contact{
+      max-width: 523px;
+    }
+  }
+
+  &__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px;
+    width: 100%;
+    max-width: 505px;
+    min-height: 60px;
+
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+
+    background: linear-gradient(90deg, #FF7E02 -1.53%, #FF2E00 100%);
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &--contact{
+      max-width: 295px;
+    }
+  }
+
+  &__politics{
+    display: block;
+    width: 100%;
+    max-width: 309px;
+    margin: 30px auto 0;
+
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    a{
+      font-family: "e-Ukraine Head", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    &--privacy{
+
+    }
+  }
+
+  &__icon{
+    margin-left: 29px;
+  }
+}

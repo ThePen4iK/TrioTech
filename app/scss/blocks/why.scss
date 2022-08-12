@@ -1,0 +1,109 @@
+.why{
+  background: #1B2938;
+  padding-top: 280px;
+  padding-bottom: 187px;
+  position: relative;
+  z-index: 3;
+  @media(max-width: 768px){
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("../../img/why-bg.svg") center center no-repeat;
+    width: 100%;
+    max-width: 1647px;
+    height: 812px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  //&__bg{
+  //  img{
+  //   display: block;
+  //    position: absolute;
+  //
+  //    z-index: 0;
+  //  }
+  //}
+  &__list{
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:  78px 158px;
+    @media(max-width: 1240px){
+      gap: 40px;
+    }
+    @media(max-width: 992px){
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item{
+    padding: 47px 30px 27px;
+    background: #FF5B01;
+    border-radius: 5px;
+
+    height: 100%;
+    min-height: 278px;
+
+    @media(max-width: 992px){
+      padding: 30px;
+    }
+    @media(max-width: 576px){
+      padding: 10px;
+    }
+  }
+  &__header{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 18px;
+  }
+  &__title{
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    @media(max-width: 768px){
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  &__text{
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+    @media(max-width: 768px){
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  &__btn{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  &__icon{
+    width: 113px;
+    height: 113px;
+    @media(max-width: 992px){
+      width: 75px;
+      height: 75px;
+    }
+    &--arrow{
+      width: 21px;
+      height: 17px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.partner{
+  padding-top: 150px;
+  padding-bottom: 168px;
+  position: relative;
+
+  @media(max-width: 768px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__bg{
+    img{
+      display: block;
+      position: absolute;
+      top: -9%;
+      left: 3%;
+      width: 1250px;
+      height: 1076px;
+      transform: translateY(-9%) translateX(3%);
+      z-index: -1;
+      @media(max-width: 992px){
+        display: none;
+      }
+    }
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 251px 1fr;
+    gap: 59px;
+    @media(max-width: 992px){
+      grid-template-columns: 1fr;
+    }
+  }
+  &__list{
+    list-style: none;
+
+    width: 100%;
+    max-width: 1283px;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media(max-width: 1350px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 576px){
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 137px;
+    padding: 40px 70px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0.359155px;
+      height: 100%;
+      background: #FF5B01;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0.359155px;
+      background: #FF5B01;
+    }
+    &:nth-child(3n + 3){
+      &:before{
+        display: none;
+        @media(max-width: 1350px){
+          display: block;
+        }
+      }
+    }
+    &:nth-last-child(-n + 3){
+      &:after{
+        display: none;
+        @media(max-width: 1350px){
+          display: block;
+        }
+      }
+    }
+    @media(max-width: 1350px){
+      &:nth-child(2n + 2){
+        &:before{
+          display: none;
+        }
+      }
+      &:nth-last-child(-n + 2){
+        &:after{
+          display: none;
+        }
+      }
+    }
+    @media(max-width: 576px){
+      &:nth-child(n + 1){
+        &:before{
+          display: none;
+        }
+      }
+      &:nth-last-child(-n + 2){
+        &:after{
+          display: block;
+        }
+      }
+    }
+  }
+  &__link{
+    text-decoration: none;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

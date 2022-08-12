@@ -1,0 +1,89 @@
+.brands{
+  padding-top: 137px;
+  padding-bottom: 76px;
+  position: relative;
+  z-index: 2;
+  @media(max-width: 768px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__swiper{
+    margin-top: 90px;
+    padding-top: 30px;
+    overflow: hidden;
+
+  }
+  &__slide{
+    flex: 0 0 328px;
+  }
+  &__header{
+    padding: 35px;
+    height: 100%;
+    min-height: 174px;
+    max-height: 174px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 30px rgba(39, 52, 67, 0.3));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 22px;
+    img{
+      width: fit-content;
+      height: max-content;
+    }
+  }
+  &__name{
+    font-family: "e-Ukraine Head", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__navigation{
+    width: 100%;
+    max-width: 68px;
+    margin-top: 60px;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__prev{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  &__next{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+
+  &__decor{
+    img{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      max-width: max-content;
+      height: 100%;
+      z-index: -5;
+
+      @media(max-width: 992px){
+        display: none;
+      }
+    }
+  }
+}

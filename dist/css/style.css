@@ -570,7 +570,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     opacity: 0;
-    padding: 120px 15px 30px;
+    padding: 120px 15px 80px;
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);

@@ -1,6 +1,17 @@
 .lang{
-  list-style: none;
-
+  &__button{
+    background: transparent;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  &__list{
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
   &__item{
 
   }

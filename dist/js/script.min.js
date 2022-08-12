@@ -3,30 +3,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let burger = document.querySelector(".hamburger"),
         header = document.querySelector(".header"),
-        startScreen = document.querySelector('.js-main'),
-        bodyDontScroll = document.documentElement,
-        headerHeight = header.getBoundingClientRect().height,
-        headerFixed = startScreen.offsetHeight - headerHeight;
-    console.log(headerFixed)
+        startScreen = document.querySelector('.js-main');
+
+
+
     window.onscroll = function () {
         fixed();
     }
 
     function fixed() {
+        let headerHeight = header.getBoundingClientRect().height;
+
+        let headerFixed = startScreen.offsetHeight - headerHeight;
         //&& window.pageYOffset >= headerFixed
-        if (window.scrollY > 0 && window.pageYOffset >= headerFixed ) {
+        if (window.scrollY > 0 && window.pageYOffset >= headerFixed) {
             header.classList.add("header__fixed");
         } else {
             header.classList.remove("header__fixed");
         }
     }
+        if(burger){
+            burger.addEventListener("click", () => {
+                rootElement.classList.toggle("block");
+                header.classList.toggle("header--open");
+                burger.classList.toggle("hamburger--active");
 
-    burger.addEventListener("click", () => {
-        rootElement.classList.toggle("block");
-        header.classList.toggle("header--open");
-        burger.classList.toggle("hamburger--active");
+            })
+        }
 
-    })
 
 
     let quotesBtn = document.querySelector('.quotes__btn');
@@ -34,22 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
     let overlay = document.querySelector(".overlay");
     let productsBtn = document.querySelector(".products__btn");
     let startBtn = document.querySelector(".start__btn--defolt");
-    if(quotesBtn){
-        quotesBtn.addEventListener("click", ()=>{
+    if (quotesBtn) {
+        quotesBtn.addEventListener("click", () => {
             popup.classList.add("popup__show");
             rootElement.classList.add("block");
             overlay.classList.add("active-overlay");
         });
     }
-    if(productsBtn){
-        productsBtn.addEventListener("click", ()=>{
+    if (productsBtn) {
+        productsBtn.addEventListener("click", () => {
             popup.classList.add("popup__show");
             rootElement.classList.add("block");
             overlay.classList.add("active-overlay");
         });
     }
-    if(startBtn){
-        startBtn.addEventListener("click", ()=>{
+    if (startBtn) {
+        startBtn.addEventListener("click", () => {
             popup.classList.add("popup__show");
             rootElement.classList.add("block");
             overlay.classList.add("active-overlay");
@@ -118,6 +122,24 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     window.scrollSmooth();
+
+
+    // let langBtn = document.querySelector(".lang__button");
+    // let langList = document.querySelector(".lang__list");
+    // if (langBtn) {
+    //     langBtn.addEventListener("click", (e) => {
+    //         if (langList.classList.contains("hide")) {
+    //             langList.classList.remove("hide");
+    //             langList.classList.add("show");
+    //         } else {
+    //             langList.classList.remove("show");
+    //             langList.classList.add("hide");
+    //         }
+    //
+    //     })
+    // }
+
+
     console.log("DOM fully loaded and parsed");
 })
 document.addEventListener("DOMContentLoaded",(function(){console.log("DOM fully loaded and parsed")}));

@@ -25,6 +25,22 @@
     //  transition: all 0.8s ease-in-out;
     //  flex: 1.5;
     //}
+    @media(max-width: 1200px){
+      flex: 0 0 576px;
+    }
+    @media(max-width: 768px){
+      flex: 0 0 476px;
+    }
+
+    @media(max-width: 460px){
+      flex: 0 0 460px;
+    }
+    @media(max-width: 360px){
+      flex: 0 0 360px;
+    }
+    @media(max-width: 320px){
+      flex: 0 0 320px;
+    }
   }
   &__bg{
     position: absolute;
@@ -105,6 +121,11 @@
       font-size: 36px;
       line-height: 40px;
     }
+    @media(max-width: 576px){
+      font-size: 24px;
+      line-height: 28px;
+
+    }
   }
   &__link{
     outline: none;
@@ -130,6 +151,7 @@
       font-size: 18px;
       line-height: 24px;
     }
+
   }
   &__icon{
     margin-left: 30px;

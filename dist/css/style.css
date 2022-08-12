@@ -922,6 +922,8 @@ img {
   z-index: 2;
 }
 .primary__btn {
+  position: absolute;
+  top: -185px;
   outline: none;
   border: 2px solid #FFFFFF;
   border-radius: 5px;
@@ -938,7 +940,6 @@ img {
   text-align: left;
   width: 100%;
   max-width: 411px;
-  margin-bottom: 185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

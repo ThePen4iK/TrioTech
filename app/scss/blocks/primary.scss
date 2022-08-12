@@ -20,6 +20,11 @@
         flex: 1.5;
       }
     }
+
+    //&:focus{
+    //  transition: all 0.8s ease-in-out;
+    //  flex: 1.5;
+    //}
   }
   &__bg{
     position: absolute;
@@ -56,6 +61,8 @@
     //padding-left:60px ;
   }
   &__btn{
+    position: absolute;
+    top: -185px;
     outline: none;
     border: 2px solid #FFFFFF;
     border-radius: 5px;
@@ -74,7 +81,7 @@
 
     width: 100%;
     max-width: 411px;
-    margin-bottom: 185px;
+    //margin-bottom: 185px;
 
     display: flex;
     justify-content: center;

@@ -115,25 +115,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
    });
 
-    // let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
-    //     breakpoints: {
-    //         320: {
-    //             slidesPerView: "auto",
-    //         },
-    //
-    //     },
-    //     on: {
-    //         resize() {
-    //             if (window.innerWidth <= 1200) {
-    //                 this.enable();
-    //             } else if (window.innerWidth > 1200) {
-    //                 this.slideTo(0);
-    //                 this.disable();
-    //             }
-    //         },
-    //     },
-    //
-    // });
+    let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
+        slidesPerView: "auto",
+
+        // breakpoints: {
+        //     320: {
+        //         slidesPerView: "auto",
+        //     },
+        //
+        // },
+        // on: {
+        //     resize() {
+        //         if (window.innerWidth <= 1200) {
+        //             this.enable();
+        //         } else if (window.innerWidth > 1200) {
+        //             this.slideTo(0);
+        //             this.disable();
+        //         }
+        //     },
+        // },
+
+    });
 
     /* Плавный скролл к элементам */
     window.scrollSmooth = (container = document) => {

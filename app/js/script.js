@@ -97,12 +97,21 @@ document.addEventListener("DOMContentLoaded", function () {
    let swiperPrimary = new Swiper(".primary__swiper", {
         slidesPerView: "auto",
 
-       // breakpoints: {
-       //     320: {
-       //     },
-       //
-       // },
+       breakpoints: {
+           320: {
+           },
 
+       },
+       on: {
+           resize() {
+               if (window.innerWidth <= 1200) {
+                   this.enable();
+               } else if (window.innerWidth > 1200) {
+                   this.slideTo(0);
+                   this.disable();
+               }
+           },
+       },
 
    });
 

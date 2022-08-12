@@ -99,7 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
        breakpoints: {
            320: {
+               slidesPerView: 1
            },
+           576:{
+               slidesPerView: "auto",
+           }
 
        },
        // on: {

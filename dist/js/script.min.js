@@ -102,16 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
            },
 
        },
-       on: {
-           resize() {
-               if (window.innerWidth <= 1200) {
-                   this.enable();
-               } else if (window.innerWidth > 1200) {
-                   this.slideTo(0);
-                   this.disable();
-               }
-           },
-       },
+       // on: {
+       //     resize() {
+       //         if (window.innerWidth <= 1200) {
+       //             this.enable();
+       //         } else if (window.innerWidth > 1200) {
+       //             this.slideTo(0);
+       //             this.disable();
+       //         }
+       //     },
+       // },
 
    });
 

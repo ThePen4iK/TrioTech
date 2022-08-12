@@ -9,11 +9,14 @@
   &__item{
     position: relative;
     flex: 1;
-    transition: 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    min-height: 100vh;
 
+    display: flex;
+    align-items: center;
     @media(any-hover: hover){
       &:hover{
-        transition: 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
         flex: 1.5;
       }
     }
@@ -50,8 +53,7 @@
   &__wrapper{
     position: relative;
     z-index: 2;
-
-    padding: 160px 0 214px  60px ;
+    //padding-left:60px ;
   }
   &__btn{
     outline: none;
@@ -72,6 +74,7 @@
 
     width: 100%;
     max-width: 411px;
+    margin-bottom: 185px;
 
     display: flex;
     justify-content: center;

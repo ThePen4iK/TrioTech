@@ -986,7 +986,6 @@ img {
 }
 @media (max-width: 992px) {
   .primary__wrapper {
-    padding-top: 40px;
     padding-bottom: 214px;
   }
 }
@@ -1021,7 +1020,6 @@ img {
 }
 @media (max-width: 1200px) {
   .primary__btn {
-    top: -155px;
     font-size: 18px;
     line-height: 24px;
   }

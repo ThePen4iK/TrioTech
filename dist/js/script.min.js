@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const rootElement = document.documentElement;
 
+
     let burger = document.querySelector(".hamburger"),
         header = document.querySelector(".header"),
         startScreen = document.querySelector('.js-main');
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let overlay = document.querySelector(".overlay");
     let productsBtn = document.querySelector(".products__btn");
     let startBtn = document.querySelector(".start__btn--defolt");
+    let popupClose = document.querySelector(".popup__close");
     if (quotesBtn) {
         quotesBtn.addEventListener("click", () => {
             popup.classList.add("popup__show");
@@ -58,6 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
             rootElement.classList.add("block");
             overlay.classList.add("active-overlay");
         });
+    }
+    if(popupClose){
+        popupClose.addEventListener("click", ()=>{
+            popup.classList.remove("popup__show");
+            rootElement.classList.remove("block");
+            overlay.classList.remove("active-overlay");
+        })
     }
     document.body.addEventListener('keyup', function (e) {
         var key = e.keyCode;
@@ -93,49 +102,55 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+    let widthScreen = document.documentElement.clientWidth;
 
-   let swiperPrimary = new Swiper(".primary__swiper", {
-        slidesPerView: "auto",
+   if (widthScreen <= 1280){
+       let swiperPrimary = new Swiper(".primary__swiper", {
+           slidesPerView: "auto",
 
-       breakpoints: {
-           320: {
+           breakpoints: {
+               320: {
+               },
+
            },
+           // on: {
+           //     resize() {
+           //         if (window.innerWidth <= 1200) {
+           //             this.enable();
+           //         } else if (window.innerWidth > 1200) {
+           //             this.slideTo(0);
+           //             this.disable();
+           //         }
+           //     },
+           // },
 
-       },
-       // on: {
-       //     resize() {
-       //         if (window.innerWidth <= 1200) {
-       //             this.enable();
-       //         } else if (window.innerWidth > 1200) {
-       //             this.slideTo(0);
-       //             this.disable();
-       //         }
-       //     },
-       // },
+       });
 
-   });
 
-    let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
-        slidesPerView: "auto",
+       let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
+           slidesPerView: "auto",
 
-        // breakpoints: {
-        //     320: {
-        //         slidesPerView: "auto",
-        //     },
-        //
-        // },
-        // on: {
-        //     resize() {
-        //         if (window.innerWidth <= 1200) {
-        //             this.enable();
-        //         } else if (window.innerWidth > 1200) {
-        //             this.slideTo(0);
-        //             this.disable();
-        //         }
-        //     },
-        // },
+           // breakpoints: {
+           //     320: {
+           //         slidesPerView: "auto",
+           //     },
+           //
+           // },
+           // on: {
+           //     resize() {
+           //         if (window.innerWidth <= 1200) {
+           //             this.enable();
+           //         } else if (window.innerWidth > 1200) {
+           //             this.slideTo(0);
+           //             this.disable();
+           //         }
+           //     },
+           // },
 
-    });
+       });
+
+   }
+
 
     /* Плавный скролл к элементам */
     window.scrollSmooth = (container = document) => {

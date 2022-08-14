@@ -756,6 +756,11 @@ img {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 360px) {
+  .lang--header {
+    margin-top: 30px;
+  }
+}
 .lang--fatal {
   margin-right: 50px;
 }
@@ -2292,18 +2297,29 @@ img {
   visibility: hidden;
   overflow: auto;
 }
+@media (max-width: 600px) {
+  .popup {
+    height: 95vh;
+    overflow: scroll;
+  }
+}
 .popup__container {
   background: #FFFFFF;
   padding: 52px 70px 41px;
+  position: relative;
 }
 @media (max-width: 576px) {
   .popup__container {
-    padding: 50px 35px 40px;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media (max-width: 420px) {
   .popup__container {
-    padding: 30px 15px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .popup__close {
@@ -2327,8 +2343,8 @@ img {
 }
 @media (max-width: 576px) {
   .popup__close {
-    top: 25px;
-    right: 25px;
+    top: 15px;
+    right: 15px;
   }
 }
 .popup__title {

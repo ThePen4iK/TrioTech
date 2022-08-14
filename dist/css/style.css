@@ -1005,11 +1005,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 1100px) {
-  .primary__btn {
-    display: none;
-  }
-}
 .primary__title {
   font-family: "e-Ukraine Head", sans-serif;
   font-size: 58px;

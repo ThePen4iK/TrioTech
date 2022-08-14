@@ -885,6 +885,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 @media (any-hover: hover) {
   .primary__item:hover {
@@ -1034,7 +1035,7 @@ img {
   color: #EFEDED;
   margin: 0 0 120px;
   width: 100%;
-  max-width: 530px;
+  max-width: 400px;
 }
 @media (max-width: 1600px) {
   .primary__title {

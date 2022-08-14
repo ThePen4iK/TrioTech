@@ -905,6 +905,20 @@ img {
             flex: 0 0 476px;
   }
 }
+@media (max-width: 585px) {
+  .primary__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 585px;
+            flex: 0 0 585px;
+  }
+}
+@media (max-width: 576px) {
+  .primary__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 576px;
+            flex: 0 0 576px;
+  }
+}
 @media (max-width: 460px) {
   .primary__item {
     -webkit-box-flex: 0;

@@ -2306,6 +2306,31 @@ img {
     padding: 30px 15px;
   }
 }
+.popup__close {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  color: #333;
+}
+@media (max-width: 576px) {
+  .popup__close {
+    top: 25px;
+    right: 25px;
+  }
+}
 .popup__title {
   font-family: "e-Ukraine Head", sans-serif;
   font-size: 38px;

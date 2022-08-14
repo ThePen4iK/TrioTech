@@ -19,7 +19,25 @@
       padding: 30px 15px;
     }
   }
+  &__close{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    color: #333;
+    @media(max-width: 576px){
+      top: 25px;
+      right: 25px;
+    }
+  }
   &__title {
     font-family: "e-Ukraine Head", sans-serif;
     font-size: 38px;

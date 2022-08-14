@@ -882,9 +882,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 @media (any-hover: hover) {
   .primary__item:hover {
@@ -974,10 +974,11 @@ img {
 .primary__wrapper {
   position: relative;
   z-index: 2;
+  padding-bottom: 120px;
 }
 .primary__btn {
   position: absolute;
-  top: -185px;
+  top: -155px;
   outline: none;
   border: 2px solid #FFFFFF;
   border-radius: 5px;
@@ -1018,6 +1019,8 @@ img {
   text-align: left;
   color: #EFEDED;
   margin: 0 0 120px;
+  width: 100%;
+  max-width: 530px;
 }
 @media (max-width: 768px) {
   .primary__title {

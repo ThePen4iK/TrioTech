@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     let widthScreen = document.documentElement.clientWidth;
 
-   if (widthScreen <= 1280){
+   // if (widthScreen <= 1280){
        let swiperPrimary = new Swiper(".primary__swiper", {
            slidesPerView: "auto",
 
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
        });
 
-   }
+   // }
 
 
     /* Плавный скролл к элементам */

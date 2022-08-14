@@ -146,38 +146,43 @@
     <div class="overlay"></div>
     <div class="popup">
         <div class="popup__container">
-            <h2 class="popup__title">Залишити заявку</h2>
-            <p class="popup__text">Залишіть свої контакти, ми з вами звʼяжемось</p>
+            <button class="popup__close">
+                <svg class="popup__icon" width="19" height="19">
+                    <use xlink:href="img/sprite.svg#popup-close"></use>
+                </svg>
+            </button>
+            <h2 class="popup__title">Get in Touch</h2>
+            <p class="popup__text">Leave your contacts and we will reply you</p>
             <form class="form">
                 <ul class="form__list">
                     <li class="form__item">
                         <label class="form__label" for="emailPopup"></label>
-                        <input class="form__input" type="text" id="emailPopup" placeholder="Ваш email">
+                        <input class="form__input" type="text" id="emailPopup" placeholder="Your email">
                     </li>
 
                     <li class="form__item">
                         <label class="form__label" for="telPopup"></label>
-                        <input class="form__input" type="tel" id="telPopup" placeholder="Телефон">
+                        <input class="form__input" type="tel" id="telPopup" placeholder="Phone">
                     </li>
 
                     <li class="form__item">
                         <label class="form__label" for="name"></label>
-                        <input class="form__input" type="tel" id="name" placeholder="Ваше імʼя">
+                        <input class="form__input" type="tel" id="name" placeholder="Name">
                     </li>
 
                     <li class="form__item">
                         <textarea class="form__textarea" name="textarea" id="textarea"
-                                  placeholder="Ваш коментар"></textarea>
+                                  placeholder="Comments"></textarea>
                     </li>
                 </ul>
 
 
-                <button class="form__btn">Відправити</button>
+                <button class="form__btn">Submit</button>
             </form>
 
             <span class="form__politics">
-                З <a href="#" class="form__politics--privacy">політикою конфіденційностю </a>  та <a href="#"
-                                                                                                     class="form__politics--mailings"> умовами розсилки</a> погоджуюсь
+                З <a href="#" class="form__politics--privacy"> privacy policy  </a>  and <a href="#"
+                                                                                                     class="form__politics--mailings">  terms of mailing</a>
             </span>
         </div>
     </div>

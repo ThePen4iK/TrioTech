@@ -15,7 +15,17 @@
 
   }
   &__slide{
-    flex: 0 0 328px;
+    flex: 0 0 346.5px;
+    @media(max-width: 992px){
+      flex: 0 0 277.4px;
+    }
+    @media(max-width: 767px){
+      flex: 0 0 263px;
+    }
+    @media(max-width: 575px){
+      flex: 0 0 290px;
+    }
+
   }
   &__header{
     padding: 35px;
@@ -25,7 +35,7 @@
 
     background: #FFFFFF;
     border-radius: 5px;
-    filter: drop-shadow(10px 10px 30px rgba(39, 52, 67, 0.3));
+    filter: drop-shadow(0px 5px 15px rgba(39, 52, 67, 0.3));
 
     display: flex;
     justify-content: center;
@@ -81,7 +91,7 @@
       height: 100%;
       z-index: -5;
 
-      @media(max-width: 992px){
+      @media(max-width: 1200px){
         display: none;
       }
     }

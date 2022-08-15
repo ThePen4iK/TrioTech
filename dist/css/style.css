@@ -887,16 +887,6 @@ img {
           align-items: center;
   overflow: hidden;
 }
-@media (any-hover: hover) {
-  .primary__item:hover {
-    -webkit-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-    -webkit-box-flex: 1.5;
-        -ms-flex: 1.5;
-            flex: 1.5;
-  }
-}
 @media (max-width: 1200px) {
   .primary__item {
     -webkit-box-flex: 0;
@@ -1575,8 +1565,29 @@ img {
 }
 .brands__slide {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 328px;
-          flex: 0 0 328px;
+      -ms-flex: 0 0 346.5px;
+          flex: 0 0 346.5px;
+}
+@media (max-width: 992px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 277.4px;
+            flex: 0 0 277.4px;
+  }
+}
+@media (max-width: 767px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 263px;
+            flex: 0 0 263px;
+  }
+}
+@media (max-width: 575px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 290px;
+            flex: 0 0 290px;
+  }
 }
 .brands__header {
   padding: 35px;
@@ -1585,8 +1596,8 @@ img {
   max-height: 174px;
   background: #FFFFFF;
   border-radius: 5px;
-  -webkit-filter: drop-shadow(10px 10px 30px rgba(39, 52, 67, 0.3));
-          filter: drop-shadow(10px 10px 30px rgba(39, 52, 67, 0.3));
+  -webkit-filter: drop-shadow(0px 5px 15px rgba(39, 52, 67, 0.3));
+          filter: drop-shadow(0px 5px 15px rgba(39, 52, 67, 0.3));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1651,7 +1662,7 @@ img {
   height: 100%;
   z-index: -5;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .brands__decor img {
     display: none;
   }

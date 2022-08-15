@@ -86,15 +86,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
     let swiperBrands = new Swiper(".brands__swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 74,
-
+            slidesPerView: 4,
+        spaceBetween: 65,
+        loop: true,
         navigation: {
             nextEl: ".brands__next",
             prevEl: ".brands__prev",
         },
         breakpoints: {
             320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
                 spaceBetween: 20
             },
             1000: {

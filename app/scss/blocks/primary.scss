@@ -105,7 +105,10 @@
       //padding-top: 40px;
       padding-bottom: 214px;
     }
-
+    @media(max-width: 576px){
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
   }
   &__text{
     position: absolute;

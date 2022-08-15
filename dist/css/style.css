@@ -940,6 +940,12 @@ img {
     padding-bottom: 214px;
   }
 }
+@media (max-width: 576px) {
+  .primary__wrapper {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
 .primary__text {
   position: absolute;
   top: 0;

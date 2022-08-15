@@ -1606,8 +1606,8 @@ img {
 @media (max-width: 412px) {
   .brands__slide {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 382px;
-            flex: 0 0 382px;
+        -ms-flex: 0 0 370px;
+            flex: 0 0 370px;
   }
 }
 @media (max-width: 400px) {

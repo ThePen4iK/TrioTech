@@ -982,6 +982,9 @@ img {
     line-height: 24px;
   }
 }
+.primary__text--mobile {
+  display: none;
+}
 @media (max-width: 1200px) {
   .primary__text--mobile {
     font-size: 24px;

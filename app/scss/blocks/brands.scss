@@ -24,7 +24,25 @@
     @media(max-width: 767px){
       flex: 0 0 263px;
     }
-    @media(max-width: 575px){
+    @media(max-width: 576px){
+
+    }
+    @media(max-width: 480px){
+      flex: 0 0 450px;
+    }
+    @media(max-width: 460px){
+      flex: 0 0 430px;
+    }
+    @media(max-width: 412px){
+      flex: 0 0 382px;
+    }
+    @media(max-width: 400px){
+      flex: 0 0 370px;
+    }
+    @media(max-width: 360px){
+      flex: 0 0 330px;
+    }
+    @media(max-width: 320px){
       flex: 0 0 290px;
     }
 

@@ -1589,7 +1589,42 @@ img {
             flex: 0 0 263px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 480px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 450px;
+            flex: 0 0 450px;
+  }
+}
+@media (max-width: 460px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 430px;
+            flex: 0 0 430px;
+  }
+}
+@media (max-width: 412px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 382px;
+            flex: 0 0 382px;
+  }
+}
+@media (max-width: 400px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 370px;
+            flex: 0 0 370px;
+  }
+}
+@media (max-width: 360px) {
+  .brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 330px;
+            flex: 0 0 330px;
+  }
+}
+@media (max-width: 320px) {
   .brands__slide {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 290px;

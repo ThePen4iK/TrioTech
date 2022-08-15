@@ -1,6 +1,7 @@
 .primary{
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   &__list{
     list-style: none;
     display: flex;

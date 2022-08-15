@@ -867,6 +867,7 @@ img {
 .primary {
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .primary__list {
   list-style: none;
@@ -1544,6 +1545,12 @@ img {
   width: 100%;
   max-width: 338px;
   margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .products__btn {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .brands {

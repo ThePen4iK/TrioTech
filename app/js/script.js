@@ -111,56 +111,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     let widthScreen = document.documentElement.clientWidth;
+    if(document.documentElement.clientWidth >= 1200){
+        let swiperPrimary = new Swiper(".primary__swiper", {
+            slidesPerView: "auto",
+
+            breakpoints: {
+                320: {
+                },
+
+            },
+
+        });
+
+        let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
+            slidesPerView: "auto",
+            // breakpoints: {
+            //     320: {
+            //         slidesPerView: "auto",
+            //     },
+            //
+            // },
+            // on: {
+            //     resize() {
+            //         if (window.innerWidth <= 1200) {
+            //             this.enable();
+            //         } else if (window.innerWidth > 1200) {
+            //             this.slideTo(0);
+            //             this.disable();
+            //         }
+            //     },
+            // },
+
+        });
+
+    }
 
    // if (widthScreen <= 1280){
-       let swiperPrimary = new Swiper(".primary__swiper", {
-           slidesPerView: "auto",
-
-           breakpoints: {
-               320: {
-               },
-
-           },
-           on: {
-               resize() {
-                   if (window.innerWidth <= 1200) {
-                       this.slideTo(0);
-                       this.disable();
-                   }
-               },
-           },
-
-       });
 
 
-       let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
-           slidesPerView: "auto",
-           on: {
-               resize() {
-                   if (window.innerWidth <= 1200) {
-                       this.slideTo(0);
-                       this.disable();
-                   }
-               },
-           },
-           // breakpoints: {
-           //     320: {
-           //         slidesPerView: "auto",
-           //     },
-           //
-           // },
-           // on: {
-           //     resize() {
-           //         if (window.innerWidth <= 1200) {
-           //             this.enable();
-           //         } else if (window.innerWidth > 1200) {
-           //             this.slideTo(0);
-           //             this.disable();
-           //         }
-           //     },
-           // },
 
-       });
 
    // }
 

@@ -720,6 +720,11 @@ img {
     padding: 0 60px;
   }
 }
+@media (max-width: 768px) {
+  .header__primary .container {
+    padding: 0 15px;
+  }
+}
 .header--open .header__content {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -888,87 +893,15 @@ img {
   overflow: hidden;
 }
 @media (max-width: 1200px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 576px;
-            flex: 0 0 576px;
+  .primary__item--mobile {
+    display: none;
   }
 }
-@media (max-width: 992px) {
-  .primary__item {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .primary__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 476px;
-            flex: 0 0 476px;
-  }
-}
-@media (max-width: 585px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 585px;
-            flex: 0 0 585px;
-  }
-}
-@media (max-width: 576px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 576px;
-            flex: 0 0 576px;
-  }
-}
-@media (max-width: 540px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 540px;
-            flex: 0 0 540px;
-  }
-}
-@media (max-width: 480px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 480px;
-            flex: 0 0 480px;
-  }
-}
-@media (max-width: 460px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 460px;
-            flex: 0 0 460px;
-  }
-}
-@media (max-width: 412px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 412px;
-            flex: 0 0 412px;
-  }
-}
-@media (max-width: 375px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 375px;
-            flex: 0 0 375px;
-  }
-}
-@media (max-width: 360px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 360px;
-            flex: 0 0 360px;
-  }
-}
-@media (max-width: 320px) {
-  .primary__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 320px;
-            flex: 0 0 320px;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 }
 .primary__bg {
@@ -1007,7 +940,7 @@ img {
     padding-bottom: 214px;
   }
 }
-.primary__btn {
+.primary__text {
   position: absolute;
   top: 0;
   outline: none;
@@ -1037,9 +970,32 @@ img {
           align-items: center;
 }
 @media (max-width: 1200px) {
-  .primary__btn {
+  .primary__text {
+    display: none;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .primary__text--mobile {
+    font-size: 24px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: none;
+    padding: unset;
+  }
+}
+@media (max-width: 992px) {
+  .primary__text--mobile {
+    top: 20px;
   }
 }
 .primary__title {
@@ -1058,6 +1014,11 @@ img {
   .primary__title {
     font-size: 36px;
     line-height: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .primary__title {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -1096,10 +1057,40 @@ img {
           align-items: center;
   max-width: 250px;
 }
+@media (max-width: 1200px) {
+  .primary__link {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .primary__link {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+.primary__link--mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .primary__link--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: unset;
+  }
+  .primary__link--mobile:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .primary__link--mobile {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .primary__icon {

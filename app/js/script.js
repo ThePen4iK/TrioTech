@@ -86,8 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
     let swiperBrands = new Swiper(".brands__swiper", {
-            slidesPerView: 4,
-        spaceBetween: 65,
+        slidesPerView: 4,
         loop: true,
         navigation: {
             nextEl: ".brands__next",
@@ -122,23 +121,28 @@ document.addEventListener("DOMContentLoaded", function () {
                },
 
            },
-           // on: {
-           //     resize() {
-           //         if (window.innerWidth <= 1200) {
-           //             this.enable();
-           //         } else if (window.innerWidth > 1200) {
-           //             this.slideTo(0);
-           //             this.disable();
-           //         }
-           //     },
-           // },
+           on: {
+               resize() {
+                   if (window.innerWidth <= 1200) {
+                       this.slideTo(0);
+                       this.disable();
+                   }
+               },
+           },
 
        });
 
 
        let swiperPrimaryEN = new Swiper(".primary__swiper--en", {
            slidesPerView: "auto",
-
+           on: {
+               resize() {
+                   if (window.innerWidth <= 1200) {
+                       this.slideTo(0);
+                       this.disable();
+                   }
+               },
+           },
            // breakpoints: {
            //     320: {
            //         slidesPerView: "auto",

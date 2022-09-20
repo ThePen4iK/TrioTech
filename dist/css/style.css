@@ -1417,6 +1417,11 @@ img {
     gap: 45px;
   }
 }
+@media (max-width: 1440px) {
+  .product__list {
+    grid-template-columns: repeat(auto-fill, 378px);
+  }
+}
 @media (max-width: 576px) {
   .product__list {
     -ms-grid-columns: 1fr;

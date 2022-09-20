@@ -95,12 +95,12 @@
     outline: none;
   }
   &__icon{
-    width: 113px;
-    height: 113px;
-    @media(max-width: 992px){
-      width: 75px;
-      height: 75px;
-    }
+    width: 60px;
+    height: 60px;
+    //@media(max-width: 992px){
+    //  width: 75px;
+    //  height: 75px;
+    //}
     &--arrow{
       width: 21px;
       height: 17px;

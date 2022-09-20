@@ -68,9 +68,12 @@
     //  letter-spacing: 0.02em;
     //  text-align: left;
     //}
-    @media(max-width: 992px) {
+    @media(max-width: 1520px){
       font-size: 48px;
       line-height: 52px;
+    }
+    @media(max-width: 992px) {
+
 
     }
 
@@ -95,14 +98,15 @@
     &:not(:last-child) {
       margin-bottom: 23px;
     }
-
+    @media(max-width: 1520px){
+      font-size: 20px;
+      line-height: 20px;
+    }
     @media(max-width: 992px){
       max-width: 580px;
     }
     @media(max-width: 768px){
       font-size: 16px;
-      line-height: 20px;
-
       max-width: 360px;
     }
   }
@@ -240,4 +244,8 @@
       height: 100%;
     }
   }
+}
+
+.test__icon{
+  color: red;
 }

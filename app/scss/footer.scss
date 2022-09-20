@@ -160,7 +160,7 @@
         color: #000000;
 
         &-tel{
-          font-size: 40px;
+          font-size: 36px;
           font-weight: 400;
           line-height: 56px;
           letter-spacing: 0.02em;
@@ -170,15 +170,15 @@
           }
         }
         &-mail{
-          font-size: 34px;
+          font-size: 23px;
           font-weight: 300;
           line-height: 48px;
           letter-spacing: 0.02em;
           text-align: left;
-          @media(max-width: 768px){
-            font-size: 24px;
-            line-height: 28px;
-          }
+          //@media(max-width: 768px){
+          //  font-size: 24px;
+          //  line-height: 28px;
+          //}
         }
         &-place{
           font-size: 24px;

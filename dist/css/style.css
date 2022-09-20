@@ -486,6 +486,11 @@ img {
     padding: 0;
   }
 }
+@media (min-width: 1601px) {
+  .header .container {
+    padding: 0 60px;
+  }
+}
 .header__fixed {
   padding: 0;
   -webkit-transition: all 0.5s ease-in-out;

@@ -12,14 +12,20 @@
   @media(max-width: 1050px){
     padding: 0;
   }
+  &__primary{
+    & .container__primary{
+      padding: 0 60px !important;
+      @media(max-width: 768px){
+        padding: 0 15px !important;
+      }
+    }
+  }
   .container{
     transition: all .5s ease-in-out;
     @media(max-width: 1600px){
       padding: 0;
     }
-    @media(min-width: 1601px){
-      padding: 0 60px;
-    }
+
   }
   &__fixed{
     padding: 0;

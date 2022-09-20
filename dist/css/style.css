@@ -476,6 +476,14 @@ img {
     padding: 0;
   }
 }
+.header__primary .container__primary {
+  padding: 0 60px !important;
+}
+@media (max-width: 768px) {
+  .header__primary .container__primary {
+    padding: 0 15px !important;
+  }
+}
 .header .container {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -484,11 +492,6 @@ img {
 @media (max-width: 1600px) {
   .header .container {
     padding: 0;
-  }
-}
-@media (min-width: 1601px) {
-  .header .container {
-    padding: 0 60px;
   }
 }
 .header__fixed {

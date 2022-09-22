@@ -63,6 +63,9 @@
       width: 0.359155px;
       height: 100%;
       background: #FF5B01;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
     }
     &:after{
       content: '';
@@ -72,6 +75,9 @@
       width: 100%;
       height: 0.359155px;
       background: #FF5B01;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
     }
     &:nth-child(3n + 3){
       &:before{

@@ -172,8 +172,9 @@
     line-height: 70px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #EFEDED;
     margin: 0 0 120px;
+    color: #EFEDED;
+
     width: 100%;
     max-width: 400px;
     @media(max-width: 1600px){
@@ -188,6 +189,22 @@
       line-height: 28px;
       max-width: 270px;
     }
+
+
+    span{
+
+      color: #EFEDED;
+
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 60px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      @media(max-width: 1600px){
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
   }
   &__link{
     outline: none;
@@ -198,8 +215,8 @@
     width: 100%;
     border: none;
     font-family: "e-Ukraine Head", sans-serif;
-    font-size: 26px;
-    font-weight: 200;
+    font-size: 22px;
+    font-weight: 300;
     line-height: 31px;
     letter-spacing: 0.02em;
     text-align: left;

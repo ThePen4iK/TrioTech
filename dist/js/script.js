@@ -85,39 +85,62 @@ document.addEventListener("DOMContentLoaded", function () {
             overlay.classList.remove("active-overlay");
         }
     })
-    let swiperBrands = new Swiper(".brands__swiper", {
-        slidesPerView: 4,
-        loop: true,
-        navigation: {
-            nextEl: ".brands__next",
-            prevEl: ".brands__prev",
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+
+    $('.brands__wrapper').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.brands__prev'),
+        nextArrow: $('.brands__next'),
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 2
+                }
             },
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 20
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1
+                }
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            992:{
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-            1440: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-            1000: {
-                spaceBetween: 74,
-            }
-        }
+        ]
     });
+
+    // let swiperBrands = new Swiper(".brands__swiper", {
+    //     slidesPerView: 4,
+    //     loop: true,
+    //     navigation: {
+    //         nextEl: ".brands__next",
+    //         prevEl: ".brands__prev",
+    //     },
+    //     breakpoints: {
+    //         320: {
+    //             slidesPerView: 1,
+    //             spaceBetween: 20
+    //         },
+    //         576: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 20
+    //         },
+    //         768: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 20
+    //         },
+    //         992:{
+    //             slidesPerView: 3,
+    //             spaceBetween: 20
+    //         },
+    //         1440: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 20
+    //         },
+    //         1000: {
+    //             spaceBetween: 74,
+    //         }
+    //     }
+    // });
     let widthScreen = document.documentElement.clientWidth;
     if(document.documentElement.clientWidth >= 1200){
         let swiperPrimary = new Swiper(".primary__swiper", {

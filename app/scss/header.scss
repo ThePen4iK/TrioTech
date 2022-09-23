@@ -15,6 +15,9 @@
   &__primary{
     & .container__primary{
       padding: 0 60px !important;
+      @media(min-width: 1728px){
+        max-width: none;
+      }
       @media(max-width: 768px){
         padding: 0 15px !important;
       }
